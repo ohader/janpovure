@@ -1,5 +1,9 @@
 {
   "name": "product-app",
+  "scripts": {
+    "start": "polymer serve",
+    "build": "polymer build --js-compile"
+  },
   "dependencies": {
     "@polymer/iron-ajax": "^3.0.0-pre.21",
     "@polymer/polymer": "^3.0.0",
