@@ -1,0 +1,15 @@
+{
+  "name": "@janpovure/vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/cli": "^3.0.0-rc.3",
+    "bootstrap": "^4.1.1"
+  }
+}
