@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <button (click)="reload($event)">Reload</button>
+    </div>
+  </div>
+  <div class="row product"
+       *ngFor="let product of products"
+       [class.is-active]="product === activeProduct"
+       (click)="selectProduct(product)">
+    <div class="col-6 col-md-3 title">Title: {{ product.title }}</div>
+    <div class="col-6 col-md-3 price">Price: {{ product.price }} EUR</div>
+    <div class="col-12 col-md-6">
+      <product-color [color]="color" *ngFor="let color of product.colors">
+      </product-color>
+    </div>
+    <div class="col-12 col-md-6 description" *ngIf="product === activeProduct">
+      {{ product.description }}
+    </div>
+  </div>
+</div>

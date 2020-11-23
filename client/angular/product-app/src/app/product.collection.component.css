@@ -1,0 +1,3 @@
+.product { cursor: pointer }
+.product .description { color: #999; margin-bottom: 1em }
+.is-active.product { cursor: inherit }
